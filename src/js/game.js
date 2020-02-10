@@ -7,7 +7,7 @@ let score = 0;
 
 const randomTime = (min , max) => {
   return Math.round(Math.random() * (max - min) + min);
-}
+};
 
 const randomHole = (holes) => {
   let id = Math.floor(Math.random()* holes.length);
@@ -17,7 +17,7 @@ const randomHole = (holes) => {
   }
   lastHole = hole;
   return hole;
-}
+};
 
 const peep = () => {
   const time = randomTime(500, 1500);
@@ -28,7 +28,7 @@ const peep = () => {
     if(!timeUp) peep();
   }, time);
 
-}
+};
 
 const startGame = () => {
   scoreBoard.textContent = "score: 0";
@@ -36,15 +36,13 @@ const startGame = () => {
   score = 0;
   peep();
   setTimeout( ()=> timeUp = true, 10000 );
-}
+};
 
 const bonk = (e) => {
   if(!e.isTrusted) return;
   score += 1;
-  console.log(e);
   (e.target).offsetParent.classList.remove('up');
   scoreBoard.textContent = "score: " + score;
-}
+};
 
 courages.forEach(courage => courage.addEventListener('click', bonk));
-//

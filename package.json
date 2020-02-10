@@ -43,5 +43,8 @@
 		"lazypipe": "1.0.1",
 		"lodash.template": ">=4.5.0",
 		"node-sass": "^4.13.1"
+	},
+	"dependencies": {
+		"nouislider": "^14.1.1"
 	}
 }

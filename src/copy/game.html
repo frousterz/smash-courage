@@ -2,46 +2,62 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Smash!</title>
-
+    <title>Smash it with Courage!</title>
+    <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="css/game.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </head>
   <body>
-
-    <div class="container">
-      <div class="game__stats">
-        <div class="text">
-          <h1>Smash it with Courage!</h1>
-          <button onclick="startGame()" type="button" name="button">start</button>
-        </div>
-        <div id="score" class="score">
-          score: 0
-        </div>
+    <div class="">
+      <div class="left-content">
+        <ul class="collection with-header">
+            <li class="collection-header"><h5>Stats</h5></li>
+            <a href="#!" class="collection-item"><span class="new badge">4</span>Score</a>
+            <a href="#!" class="collection-item"><span class="badge">1</span>Score</a>
+            <a href="#!" class="collection-item"><span class="badge">14</span>Score</a>
+          </div>
       </div>
-
-      <div class="game">
-        <div class="hole hole-1">
-          <div class="courage"></div>
+      <div class="main-content">
+        <div class="game__stats">
+          <div class="text">
+            <h1>Smash it with Courage!</h1>
+            <button class="btn btn-danger" onclick="startGame()" type="button" name="button">start</button>
+          </div>
+          <div id="score" class="score">
+            score: 0
+          </div>
         </div>
 
-        <div class="hole hole-2">
-          <div class="courage"></div>
-        </div>
+        <div class="game">
+          <div class="hole hole-1">
+            <div class="courage"></div>
+          </div>
 
-        <div class="hole hole-3">
-          <div class="courage"></div>
-        </div>
+          <div class="hole hole-2">
+            <div class="courage"></div>
+          </div>
 
-        <div class="hole hole-4">
-          <div class="courage"></div>
-        </div>
+          <div class="hole hole-3">
+            <div class="courage"></div>
+          </div>
 
-        <div class="hole hole-5">
-          <div class="courage"></div>
-        </div>
+          <div class="hole hole-4">
+            <div class="courage"></div>
+          </div>
 
-        <div class="hole hole-6">
-          <div class="courage"></div>
+          <div class="hole hole-5">
+            <div class="courage"></div>
+          </div>
+
+          <div class="hole hole-6">
+            <div class="courage"></div>
+          </div>
         </div>
       </div>
     </div>
