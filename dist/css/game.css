@@ -1,0 +1,116 @@
+/*! project-name v0.0.1 | (c) 2020 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
+/* line 1, src/sass/game.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Amatic SC', cursive;
+  background: #C6FFDD;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#f7797d), color-stop(#FBD786), to(#C6FFDD));
+  background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* line 10, src/sass/game.scss */
+h1 {
+  text-align: center;
+  font-size: 50px;
+  line-height: 1;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+/* line 18, src/sass/game.scss */
+button {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+  cursor: pointer;
+}
+
+/* line 34, src/sass/game.scss */
+.score {
+  line-height: 1;
+  border-radius: 1rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+/* line 42, src/sass/game.scss */
+.game {
+  width: 600px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+/* line 49, src/sass/game.scss */
+.game__stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 57, src/sass/game.scss */
+.hole {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 33.33%;
+          flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 63, src/sass/game.scss */
+.hole:after {
+  display: block;
+  background: url("/images/rocks.png") bottom center no-repeat;
+  background-size: contain;
+  content: '';
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  z-index: 2;
+  bottom: -30px;
+}
+
+/* line 75, src/sass/game.scss */
+.courage {
+  background: url("/images/courage.png") bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* line 85, src/sass/game.scss */
+.hole.up .courage {
+  display: block;
+  top: 0;
+}

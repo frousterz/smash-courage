@@ -1,0 +1,74 @@
+/**
+ * @section Base Styles
+ */
+
+body {
+   background: #fd746c;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #ff9068, #fd746c);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   color: #fff;
+}
+
+.colorButton {
+   background-color: #ff9068;
+   width: 80px;
+   height: 80px;
+   border: none;
+   border-radius: 50%;
+   box-shadow: none;
+   margin: 10px;
+   border: 2px solid #fd746c;
+   cursor: pointer;
+   color: #fff;
+}
+
+#buttonWrapper{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin: 0 auto;
+}
+
+h1{
+   text-align: center;
+}
+
+#colourValue{
+   margin: 0 auto;
+   text-align: center;
+}
+
+#answer{
+   margin: 0 auto;
+   text-align: center;
+}
+
+#reset{
+   margin: 0 auto;
+   text-align: center;
+}
+
+#reset-button{
+   padding: 10px;
+   background: none;
+   border: 1px solid #000;
+   margin: 10px;
+   width: 150px;
+   text-transform: uppercase;
+   font-size: 12px;
+   border-radius: 5px;
+}
+
+.content {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &--center {
+    text-align: center;
+  }
+}
